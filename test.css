@@ -1,0 +1,15 @@
+﻿.modal {
+    background-color: hsla(9, 100%, 64%, 0.5);
+    margin: 50px;
+    padding: 50px;
+    width: 150px;
+    height: 80px;
+    border: 1px solid black;
+
+}
+
+.mb1 {
+    color: blue;
+    background-color: blue;
+    border-radius: 3px;
+}
