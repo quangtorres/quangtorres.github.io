@@ -106,3 +106,10 @@ body {
 #side-bar a:focus {
     color: white;
 }
+
+/*Top Navigation Bars*/
+.top-nav{
+    padding: 0px 18px;
+    background-color: darkorange;
+    z-index: 100;
+}
