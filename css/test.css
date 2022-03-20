@@ -1,0 +1,109 @@
+﻿/*Animation*/
+@keyframes transitionIn{
+    from{opacity:0;}
+    to{opacity:1;}
+}
+@keyframes slideInFromTop {
+    0% {
+        transform: translateY(-10%);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+
+@keyframes slideInFromLeft {
+    0% {
+        transform: translateX(-10%);
+    }
+
+    100% {
+        transform: translateX(0);
+    }
+}
+
+/*Page smooth scroll and font*/
+html {
+    scroll-behavior: smooth;
+    font-family: 'Roboto', sans-serif;
+}
+
+/*Stick everything (nav bars,…) all the way to edge of page:*/
+body {
+    margin: 0;
+    top: 0;
+    background-color: rgb(240, 240, 240);
+}
+
+/*Header*/
+header {
+    display: flex;
+    background: url(../img/portfolio-wallpaper.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    font-family: 'Roboto', sans-serif;
+    animation: 1s transitionIn;
+}
+#b {
+    background-image: linear-gradient( 180.4deg, rgba(188,120,236,1) -2.2%, rgba(29,133,163,1) 83.5% );
+    width: 200px;
+    border-width: 2px;
+    border-color: linear-gradient( 180.4deg, rgba(188,120,236,1) -2.2%, rgba(29,133,163,1) 83.5% );
+    border-radius: 5px;
+    margin: 20px;
+}
+/*Side nav bars*/
+header > .top-nav {
+    margin-top: 5%;
+    margin-left: 50%;
+    z-index: 1;
+    animation: 1s slideInFromTop;
+}
+    .top-nav a {
+        text-decoration: none;
+        color: white;
+        font-weight: bold;
+        font-size: 20px;
+        padding: 14px 16px;
+    }
+    .top-nav a:hover {
+        color: skyblue;
+    }
+/*Header content*/
+header > .header-content {
+    position: absolute;
+    top: 15%;
+    left: 20%;
+    z-index: 1;
+    color: white;
+    font-weight: bold;
+    animation: 1s slideInFromLeft;
+}
+/*Color overlay background image*/
+header > .overlay {
+    height: 100vh;
+    width: 100%;
+    background-image: linear-gradient( 180.4deg, rgba(188,120,236,1) -2.2%, rgba(29,133,163,1) 83.5% );
+    opacity: 0.7;
+    position: absolute;
+}
+
+/*Body content*/
+.section-title {
+    text-align: center;
+    background-color: white;
+    height: 100px;
+}
+
+.about-img > img {
+    width: 200px;
+    border: 10px solid white;
+    border-radius: 10px;
+    margin-top: 20px;
+    margin-left: 100px;
+    animation: 2s slideInFromLeft;
+}
+.about-paragraph{
+    float: right;
+}
