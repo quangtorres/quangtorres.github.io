@@ -7,104 +7,129 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/test.css" />
     <link rel="icon" href="img/Lạc Long Quân.ico" /> <!--Title Icon -->
+    <!--Animation on scroll-->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <!--End Animation on scroll-->
     <script src="js/test.js"></script>
-    <title>Test Page Layout</title>
-    
+    <title>Quang Do</title>
+
 </head>
 <body>
     <header>
         <!--Side nav bars-->
-        <div class = "top-nav">
-            <a href ="#about" id ="abt">About</a>
-            <a href ="#education" id="edu">Education</a>
-            <a href ="#experience" id="exp">Experience</a>
-            <a href ="#work" id ="wrk">Works</a>
-            <a href ="#resume" id="res">Resume</a>
+        <div class="top-nav" data-aos="fade-down">
+            <a href="#about" id="abt">About</a>
+            <a href="#education" id="edu">Education</a>
+            <a href="#experience" id="exp">Experience</a>
+            <a href="#work" id="wrk">Works</a>
+            <a href="#resume" id="res">Resume</a>
         </div>
         <!--Header content-->
-        <div class = "header-content">
+        <div class="header-content">
             <h2>Hello, my name is</h2>
             <h1>Quang Do</h1>
         </div>
         <!--Background image container-->
-        <div class = "overlay"></div>
+        <div class="overlay"></div>
     </header>
 
-    <div id ="content">
-     <!--About-->
-        <button id ="b">B</button> 
+    <!--Content-->
+    <div id="content">
+        <!--About-->
         <div id="about">
-            <div class ="section-title">
+            <div class="section-title">
                 <h1>About Me</h1>
             </div>
-        <div class ="about-paragraph">
-            <p>Computer Science undergraduate with a passion
-            for building user-friendly and functional websites/web applications</p>
-            <p>In the process of learning more about ReactJS</p>
-            <p>Will graduate in May 2022</p>
-            <p>Team player as well as fast learner who is ready for 
-            making a difference and further enhancing abilities
-            in the field of software development</p>
-       </div>
-       <div class ="about-img">
-        <img src = "img/Avatar2.jpg" alt ="Avatar" />
-       </div>
-     </div>
-     <!--Education-->
+            <div class="about-content" data-aos="fade-right">
+                <p>
+                    Computer Science undergraduate with a passion of building websites
+                    that people around the world can learn and live in the world of knowledge in an amusing way.
+                </p>
+                <p>In the process of learning more about ReactJS</p>
+                <p>Will graduate in May 2022</p>
+                <p>
+                    Team player as well as fast learner who is ready for
+                    making a difference and further enhancing abilities
+                    in the field of software development
+                </p>
+            </div>
+            <div class="about-img">
+                <img src="img/Avatar2.jpg" alt="Avatar" />
+            </div>
+        </div>
+        <!--Education-->
         <div id="education">
-            <div class ="section-title">
+            <div class="section-title">
                 <h1>Education</h1>
             </div>
-            <p>BS in Computer Science – University of Wisconsin-Whitewater 08/2018 – 05/2022
-• Dean's List for Fall 2021 semester</p>
+            <div class="education-content" data-aos="fade-right">
+                <p>
+                    BS in Computer Science – University of Wisconsin-Whitewater 08/2018 – 05/2022
+                    • Dean's List for Fall 2021 semester
+                </p>
+            </div>
         </div>
+        <!--Experience-->
         <div id="experience">
-            <div class ="section-title">
+            <div class="section-title">
                 <h1>Experience</h1>
             </div>
-                    <p>SciQuel - Harvard Innovation Labs – Boston, MA
-Web Developer - Spring Intern (Upcoming) 02/2022 – 05/2022
-• Collaborate with the team to customize website for publications.
-• Utilize WordPress to shape the design, interactive features, and visual identity of the website.
-• Gain insight into ReactJS and UX/UI testing.
-Housing Department – Whitewater, WI
-Web Developer 05/2021 – Present
-• Design and update UW-Whitewater Housing department web pages using Ingeniux CMS.
-• Modify and support testing on page components, reducing search time by 65%.
-• Identify 50% broken links assigned to team of 4 developers, improving the SEO of 10+ websites.
-• Build full-stack web application with optimized HTML, CSS, JavaScript, JQuery code in Laravel MVC.
-• Obtain solid understanding of SQL and TortoiseSVN by administrating database and committing code.
-• Contribute ideas to the discussions about new design for Housing department websites.
-Center for Inclusive Transition, Education, & Employment – Whitewater, WI
-Software Developer 01/2022 – 01/2022
-• Worked within agile team to build interactive web pages from existing project using RESTful API along
-with other various web languages and tools.
-• Created pages to monitor list of agencies receiving grants, which helps manage and distribute 50 000$+
-better.
-• Exposed to JSON and work with AngularJS to help debug easier.
-• Volunteered to get training with AWS.
-• Maintained the code using Git.
-</p>
+            <div class="experience-content" data-aos="fade-right">
+                <p>SciQuel - Harvard Innovation Labs – Boston, MA </p>
+                <p>Web Developer - Spring Intern (Upcoming) 02/2022 – 05/2022</p>
+                <p>• Collaborate with the team to customize website for publications.</p>
+                <p>• Utilize WordPress to shape the design, interactive features, and visual identity of the website.</p>
+                <p>• Gain insight into ReactJS and UX/UI testing.</p>
+                <p>Housing Department – Whitewater, WI</p>
+                <p>Web Developer 05/2021 – Present</p>
+                <p>• Design and update UW-Whitewater Housing department web pages using Ingeniux CMS.</p>
+                <p>• Modify and support testing on page components, reducing search time by 65%.</p>
+                <p>• Identify 50% broken links assigned to team of 4 developers, improving the SEO of 10+ websites.</p>
+                <p>• Build full-stack web application with optimized HTML, CSS, JavaScript, JQuery code in Laravel MVC.</p>
+                <p>• Obtain solid understanding of SQL and TortoiseSVN by administrating database and committing code.</p>
+                <p>• Contribute ideas to the discussions about new design for Housing department websites.</p>
+                <p>Center for Inclusive Transition, Education, & Employment – Whitewater, WI</p>
+                <p>Software Developer 01/2022 – 01/2022</p>
+                <p>• Worked within agile team to build interactive web pages from existing project using RESTful API along</p>
+                <p>with other various web languages and tools.</p>
+                <p>• Created pages to monitor list of agencies receiving grants, which helps manage and distribute 50 000$+</p>
+                <p>better.</p>
+                <p>• Exposed to JSON and work with AngularJS to help debug easier.</p>
+                <p>• Volunteered to get training with AWS.</p>
+                <p>• Maintained the code using Git.</p>
+            </div>
         </div>
+        <!--Work-->
         <div id="work">
-            <div class ="section-title">
+            <div class="section-title">
                 <h1>Work</h1>
             </div>
-                    <p>Computer Science undergraduate with a passion
-        for building user-friendly and functional websites/web applications</p>
-        <p>In the process of learning more about ReactJS</p>
-        <p>Will graduate in May 2022</p>
-        <p>Team player as well as fast learner who is ready for 
-            making a difference and further enhancing abilities
-            in the field of software development</p>
+            <div class="work-content" data-aos="fade-right">
+                <a class="portfolio-link" href="https://quangtorres.github.io/" target="_blank">Portfolio project</a>
+            </div>
         </div>
+        <!--Resume-->
         <div id="resume">
-            <div class ="section-title">
+            <div class="section-title">
                 <h1>Resume</h1>
             </div>
-
+            <div class="resume-content" data-aos="fade-right" data-aos-duration="1000" data-aos-once="true">
+                <a href="img/MyResume.pdf" target="_blank">
+                    <!--Click on image to open MyResume.pdf in a new tab-->
+                    <img class="resume-img" src="img/resume.png" alt="resume" />
+                </a>
+                <div class="resume-right-content">
+                    <p>Demonstrate my lifelong desire</p>
+                    <p>Experience has been built up since freshmen</p>
+                    <p>Various languages and frameworks</p>
+                </div>
+            </div>
         </div>
+        <!--End Resume-->
     </div>
+    <!--End Content-->
+
 </body>
 
 </html>
