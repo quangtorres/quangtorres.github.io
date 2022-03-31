@@ -7,23 +7,9 @@
         opacity:1;
     }
 }
-@keyframes slideInFromTop {
-    0% {
-        transform: translateY(-10%);
-    }
-    100% {
-        transform: translateY(0);
-    }
+.icon {
+    font-size: 100px;
 }
-@keyframes slideInFromLeft {
-    0% {
-        transform: translateX(-10%);
-    }
-    100% {
-        transform: translateX(0);
-    }
-}
-
 /*Page smooth scroll and font*/
 html {
     scroll-behavior: smooth;
@@ -72,7 +58,7 @@ header > .header-content {
     z-index: 1;
     color: white;
     font-weight: bold;
-    animation: 1s slideInFromLeft;
+
 }
 /*Color overlay background image*/
 header > .overlay {
@@ -83,12 +69,13 @@ header > .overlay {
     position: absolute;
 }
 
-/*Body content*/
+/*Content*/
 .section-title {
     text-align: center;
     padding-top: 0.5%;
     background-color: white;
     height: 100px;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.2);
 }
 
 /*About content*/
@@ -96,20 +83,54 @@ header > .overlay {
     width: 200px;
     border: 10px solid white;
     border-radius: 10px;
-    margin-top: 20px;
+    margin-top: 5%;
     margin-left: 100px;
-    animation: 2s slideInFromLeft;
+    margin-bottom: 15%;
 }
-.about-content{
+.about-content {
     float: right;
+    background-color: white;
+    border-radius: 6px;
+    max-width: 35%;
+    min-height: 35%;
+    margin-top: 5%;
+    margin-right: 35%;
+    padding: 25px;
 }
 
 /*Education content*/
-.education-content{
-    text-align: center;
+.education-content > h3{
+   text-align: center;
 }
+.edu1, .edu2 {
+    display: flex;
+    justify-content: space-between;
+}
+    .edu1 > p, .edu2 > p{
+        margin-left: 25%;
+    }
+    .edu1 > span, .edu2 > span {
+        margin-right: 25%;
+        margin-top: 1.2%;
+    }
 
 /*Experience content*/
+.experience-content{
+    margin-left: 10%;
+}
+.job1, .job2, .job3, .job4, .job5, .job6, .job7 {
+    display: flex;
+    justify-content: space-between;
+}
+.job-time{
+    margin-right: 15%;
+    margin-top: 1.7%;
+}
+.job-workplace {
+    margin-top: -0.9%;
+    margin-left: 1%;
+    font-style: italic;
+}
 
 /*Work content*/
 .work-content {
@@ -134,5 +155,11 @@ header > .overlay {
 .resume-right-content {
     float: right;
     margin: 5% 15% 10% 15%;
+    font-style: italic;
+    font-size: 22px;
 }
 
+/*Copyright*/
+.copyright {
+    text-align: right;
+}
